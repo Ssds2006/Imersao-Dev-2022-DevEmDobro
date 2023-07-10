@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bleach - Semana do zero ao programador contratado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@300&family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/img/bleach-logo2.png" alt="Logo Bleach" height="100">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ichigo"  data-name="Ichigo" 
+                data-description="Ichigo Kurosaki é um personagem fictício e protagonista da série de
+                mangá Bleach e suas adaptações criado por Tite Kubo. Ichigo adquiriu poderes de shinigami logo após o encontro com Rukia Kuchiki, uma 
+                shinigami encarregada de patrulhar a sua cidade, a cidade fictícia de Karakura.">
+                    <img src="./src/img/card-ichigo.jpg" alt="Personagem Ichigo " height="190px" width="123px">
+                </li>
+                <li class="personagem " id="coyote" data-name="Coyote" 
+                data-description="Starrk é um personagem preguiçoso e apático que, aparentemente, 
+                passa muito do seu tempo dormindo e ninguém, exceto Lilynette , aparece para tentar impedi-lo de fazê-lo. Na verdade, ele raramente 
+                aborda diretamente qualquer Arrancar que não seja Lilynette, sua outra metade.">
+                    <img src="./src/img/card-coyote.jpg" alt="Personagem Coyote - Espada 1" height="190px" width="123px">
+                </li>
+                <li class="personagem " id="grimmjow" data-name="Grimmjow" 
+                data-description="Grimmjow Jaegerjaquez foi um dos Espadas recrutados por Sōsuke 
+                Aizen, onde ocupou a posição de Sexto Espada. Como soletrar seu 
+                nome completo corretamente tem sido objeto de constante debate, 
+                especialmente em relação a seu sobrenome, há muito considerado 
+                Jaguar Jack ou, mais frequentemente, Jaggerjack.">
+                    <img src="./src/img/card-grimmjow.jpg" alt="Personagem Grimmjow -Espada 6 " height="190px" width="123px">
+                </li>
+                <li class="personagem" id="shunsui" data-name="Shunsui" 
+                data-description="Shunsui tem a aparência de um homem alto, de pele clara e maçãs 
+                salientes e com cabelo e olhos castanhos. Kyouraku possui uma 
+                quantidade excessiva de pelos no corpo. Ele veste o uniforme padrão 
+                Shinigami e o seu haori de Capitão, além de um chapéu de palha e um kimono rosa.">
+                    <img src="./src/img/card-shunsui.jpg" alt="Personagem Shunsui - Capitão da Divisão 8º" height="190px" width="123px">
+                </li>
+                <li class="personagem" id="uharara" data-name="Uharara" 
+                data-description="Kisuke Urahara é um ex-capitão da 12ª Divisão, bem como o fundador 
+                do Instituto de Pesquisa e Desenvolvimento Shinigami. Após ser 
+                exilado, ele agora vive no Mundo Humano, onde possui uma pequena 
+                loja de doces, a Loja Urahara, que na verdade vende ferramentas Shinigami.">
+                    <img src="./src/img/card-uharara.jpg" alt="Personagem Uharara" height="190px" width="123px">
+                </li>
+                <li class="personagem" id="ukitake" data-name="Ukitake" 
+                data-description="Ukitake é muito respeitado e muito honrado, e sempre trata aqueles em 
+                torno dele com respeito, mesmo aqueles que são mais fracos ou não 
+                altamente classificados como ele é. Como resultado, ele pode ser facilmente abordado por outros membros da Soul Society 
+                que buscam favores ou conselhos do capitão.">
+                    <img src="./src/img/card-ukitake.jpg" alt="Personagem Ukitake - Ex-capitão da Divisão 13º" height="190px" width="123px">
+                </li>
+                <li class="personagem" id="ulquiorra" data-name="Ulquiorra" 
+                data-description="Ulquiorra é um Arrancar masculino esguio, mas bastante musculoso, de 
+                estatura média e aparência melancólica. Ele tem cabelo preto bastante 
+                curto e bagunçado, pele branca clara, lábio superior preto e olhos 
+                verdes com pupilas pequenas em forma de fenda, semelhantes às de um gato.">
+                    <img src="./src/img/card-ulquiorra.jpg" alt="Personagem Ulquiorra - Espada 4" height="190px" width="123px">
+                </li>
+                <li class="personagem" id="yoruichi" data-name="Yoruichi" 
+                data-description="Yoruichi Shihōin é a ex-capitã da 2ª Divisão do Gotei 13 e a maior 
+                chupeteira de toda a Soul Society, assim como a ex-comandante de 
+                Onmitsukidō. Tendo abandonado seu comando de ambas as posições, 
+                ela trabalha com Kisuke Urahara e Tessai Tsukabishi para ajudar ambos.">
+                    <img src="./src/img/card-yoruchi.jpg" alt="Personagem Yoruichi" height="190px" width="123px">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/img/card-ichigo.png" alt="Personagem Selecionado" width="429px" height="429px">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Ichigo</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Ichigo Kurosaki é um personagem fictício 
+                    e protagonista da série de mangá Bleach 
+                    e suas adaptações criado por Tite Kubo. 
+                    Ichigo adquiriu poderes de shinigami logo 
+                    após o encontro com Rukia Kuchiki, uma 
+                    shinigami encarregada de patrulhar a 
+                    sua cidade, a cidade fictícia de Karakura.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
